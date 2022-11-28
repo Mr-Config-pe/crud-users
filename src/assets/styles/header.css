@@ -1,0 +1,137 @@
+.form-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.form-container h1{
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    gap: .5rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: rgb(4, 46, 122);
+}
+
+.modal-form {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOn {
+    display: flex;
+}
+
+.create-container {
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+}
+
+.create-container h1 {
+    /* color:rgb(4, 46, 122); */
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+}
+
+.feature {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.feature input {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+    background-color: rgb(180, 180, 180);
+}
+
+.add {
+    margin-top: 1rem;
+    width: 100%;
+    /* background-color: rgb(4, 46, 122); */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-family: 'Aldrich', sans-serif;
+}
+
+
+/* ALGUNAS ANIMACIONES */
+/* para el boton de cerrar el modal */
+.close:hover{
+    animation: shake 1s ease-in-out infinite;
+}
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* ALERTA DE ERROR */
+
+.error-alert{
+    width: 100%;
+    color: red;
+    display: none;
+    justify-content: center;
+    font-weight: 700;
+}
